@@ -7,7 +7,7 @@ What's included in this respository:
 
 
 ## About the Sketch Library
-The CBP Design System Sketch Libary is a resource to allow consumers of the CBP Design System to quickly and consistently create mockups within the Sketch application. 
+The CBP Design System Sketch Libary is a resource to allow consumers of the CBP Design System to quickly and consistently create user interface mockups within the Sketch application. This library contains our design tokens and components to mirror our codebase as accurately as the software will allow us to. The CBP DS repo should always be considered as the single source of truth [Found Here](https://github.com/US-CBP/design-system). Currently, we only plan on supporting a Sketch version of our design assets. This may change in the future as tools and best practices shift. We have no plans to support Figma in the near term as we cannot use it due to security policies in place.
 
 
 
