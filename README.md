@@ -38,6 +38,8 @@ If you followed the installation instructions above correctly, then keeping your
 ## Something Broken?
 If you find an error, or something that is not working with the CBP DS Sketch Library file, please open a github issue in our repo. We cannot guarantee that we will make any suggested change, or on what timeline that a change may occur as we have a small team. But we appreciate your feedback and encourage you to submit issues when you find them.
 
+Open an issue [Github Issue](https://github.com/US-CBP/cbp-ds-for-designers/issues)
+
 
 
 ## Library File Status
