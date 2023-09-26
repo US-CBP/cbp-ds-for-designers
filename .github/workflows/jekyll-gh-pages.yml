@@ -11,7 +11,7 @@ on:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -50,7 +50,7 @@ jobs:
           git config --global user.name 'GH Action'
           git config --global user.email 'actions@users.noreply.github.com'
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
-          git commit -am "Automated update sketch.json"
+          git commit -am "[skip ci] Update sketch.json (automated)"
           git push
 
   # Deployment job
