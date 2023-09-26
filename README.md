@@ -12,7 +12,7 @@ In order to use this resource there are several prerequisites required before tr
 - You must be working from an Apple Macintosh OS computer. Sketch does not currently support desktop Windows machines. Though Sketch does have a browser-based offering.
 - You must have a license or subscription to use the Sketch Application. [Download Sketch](https://www.sketch.com/)
 - You must download and install the required font files to your font book. First Download the font files.
-    - Roboto from Google Fonts. First, you will need to click the "download family" button from this page [Roboto - Google Fonts](https://fonts.google.com/specimen/Roboto). Then you will need to unzip the folder and drag all of the .ttf files to your font book application on your mac into your "All Fonts" folder.
+    - Roboto from Google Fonts. First, you will need to click the "download family" button from this page [Google Fonts](https://fonts.google.com/specimen/Roboto). Then you will need to unzip the folder and drag all of the .ttf files to your font book application on your mac into your "All Fonts" folder.
     - Font Awesome 6.
 
 Add the [CBP Sketch Library](sketch://add-library?url=https%3A%2F%2Fus-cbp.github.io%2Fcbp-ds-for-designers%2Fsketch.rss)
