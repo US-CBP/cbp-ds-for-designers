@@ -28,6 +28,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+            # Checkout as many commits as needed for the diff
+            fetch-depth: 2
+
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Build with Jekyll
@@ -36,12 +40,27 @@ jobs:
           source: ./
           destination: ./_site
 
+      - shell: pwsh
+        # Give an id to the step, so we can reference it later
+        id: check_file_changed
+        run: |
+            # Diff HEAD with the previous commit
+            $diff = git diff --name-only HEAD^ HEAD
+
+            # Check if a file with the .sketch extension has changed (added, modified, deleted)
+            $SourceDiff = $diff | Where-Object { $_ -match '.sketch$' }
+            $HasDiff = $SourceDiff.Length -gt 0
+
+            # Set the output named "docs_changed"
+            Write-Host "::set-output name=sketch_changed::$HasDiff"
+
       - name: Update sketch.json
         uses: sergeysova/jq-action@v2
+        if: steps.check_file_changed.outputs.sketch_changed == 'True'
         with:
           # jq command with arguments
           cmd: "jq -n --arg name \"CBP DS SKETCH LIBRARY.sketch\" --arg url \"https://github.com/US-CBP/cbp-ds-for-designers/raw/main/CBP%20DS%20SKETCH%20LIBRARY.sketch\" --arg dts \"$(date +%Y%m%d.%H%M%S)\" '{ itemName: $name, versionID: $dts, downloadURL: $url }' > sketch.json"
-     
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
 
