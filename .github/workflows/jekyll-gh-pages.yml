@@ -32,14 +32,6 @@ jobs:
             # Checkout as many commits as needed for the diff
             fetch-depth: 2
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./
-          destination: ./_site
-
       - shell: pwsh
         # Give an id to the step, so we can reference it later
         id: check_file_changed
@@ -54,22 +46,30 @@ jobs:
             # Set the output named "docs_changed"
             Write-Host "::set-output name=sketch_changed::$HasDiff"
 
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+
       - name: Update sketch.json
         uses: sergeysova/jq-action@v2
         if: steps.check_file_changed.outputs.sketch_changed == 'True'
         with:
           # jq command with arguments
           cmd: "jq -n --arg name \"CBP DS SKETCH LIBRARY.sketch\" --arg url \"https://github.com/US-CBP/cbp-ds-for-designers/raw/main/CBP%20DS%20SKETCH%20LIBRARY.sketch\" --arg dts \"$(date +%Y%m%d.%H%M%S)\" '{ itemName: $name, versionID: $dts, downloadURL: $url }' > sketch.json"
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
-
       - name: Commit sketch.json
+        if: steps.check_file_changed.outputs.sketch_changed == 'True'
         run: |
           git config --global user.name 'GH Action'
           git config --global user.email 'actions@users.noreply.github.com'
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
-          git commit -am "[skip ci] Update sketch.json (automated)"
+          git add sketch.json
+          git commit -m "[skip ci] Update sketch.json (automated)"
           git push
 
   # Deployment job
