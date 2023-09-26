@@ -5,8 +5,10 @@ What's included in this respository:
 - Sketch Library 
 
 
+
 ## About the Sketch Library
 The CBP Design System Sketch Libary is a resource to allow consumers of the CBP Design System to quickly and consistently create mockups within the Sketch application. 
+
 
 
 ### Installation Instructions for Adding the Sketch Library file to Your System
@@ -23,12 +25,17 @@ Once you have the font files installed on your system click this link to add the
 Upon clicking this link, you should be directed to your Sketch desktop application to confirm that you want to add this library file. 
 
 
+
 ### Keeping the CBP Design System Library File Up-To-Date
 If you followed the installation instructions above correctly, then keeping your local version of the Sketch library should be very simple. Whenever there is an update to the Sketch library file then any file you use that utilizes the CBP DS Sketch library will update upon clicking the notification icon in the top-right corner of your Sketch application and selecting "library Updates Available." This will tell Sketch to update your library file and will show you what has changed between your version and this one. 
+
+DO NOT make changes directly to the CBP DS Sketch library file. If you do, then when you update your version of the library file any of these overrides may be lost. If you need an alternate version of a particular component try clicking on that component and "make it local" so that you detach any changes you are making from an element in the library file.
+
 
 
 ## Something Broken?
 If you find an error, or something that is not working with the CBP DS Sketch Library file, please open a github issue in our repo. We cannot guarantee that we will make any suggested change, or on what timeline that a change may occur as we have a small team. But we appreciate your feedback and encourage you to submit issues when you find them.
+
 
 
 ## Library File Status
