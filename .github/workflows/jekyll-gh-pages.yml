@@ -44,7 +44,7 @@ jobs:
             $HasDiff = $SourceDiff.Length -gt 0
 
             # Set the output named "docs_changed"
-            Write-Host "::set-output name=sketch_changed::$HasDiff"
+            echo "sketch_changed=$HasDiff" >> $GITHUB_STATE
 
       - name: Setup Pages
         uses: actions/configure-pages@v3
