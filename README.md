@@ -4,8 +4,10 @@ This repository hosts editable, open source US Customs and Border Protection (US
 What's included in this respository:
 - Sketch Library 
 
+
 ## About the Sketch Library
 The CBP Design System Sketch Libary is a resource to allow consumers of the CBP Design System to quickly and consistently create mockups within the Sketch application. 
+
 
 ### Installation Instructions for Adding the Sketch Library file to Your System
 In order to use this resource there are several prerequisites required before trying to download this file. 
@@ -20,5 +22,16 @@ In order to use this resource there are several prerequisites required before tr
 Once you have the font files installed on your system click this link to add the Sketch Library File to your Sketch application: [Add Sketch Library](sketch://add-library?url=https%3A%2F%2Fus-cbp.github.io%2Fcbp-ds-for-designers%2Fsketch.rss)  
 Upon clicking this link, you should be directed to your Sketch desktop application to confirm that you want to add this library file. 
 
+
 ### Keeping the CBP Design System Library File Up-To-Date
 If you followed the installation instructions above correctly, then keeping your local version of the Sketch library should be very simple. Whenever there is an update to the Sketch library file then any file you use that utilizes the CBP DS Sketch library will update upon clicking the notification icon in the top-right corner of your Sketch application and selecting "library Updates Available." This will tell Sketch to update your library file and will show you what has changed between your version and this one. 
+
+
+## Something Broken?
+If you find an error, or something that is not working with the CBP DS Sketch Library file, please open a github issue in our repo. We cannot guarantee that we will make any suggested change, or on what timeline that a change may occur as we have a small team. But we appreciate your feedback and encourage you to submit issues when you find them.
+
+
+## Library File Status
+
+### September 2023
+The CBP DS library file has been made available for download. The file should be considered as in "Alpha" status and will change frequently with little or no warning. At this stage we encourage users to download and try out the library file with the understanding that this file and all of its components will likely change significantly before a wider release campaign begins for the CBP Design System.
