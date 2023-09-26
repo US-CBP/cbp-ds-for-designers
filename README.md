@@ -15,7 +15,7 @@ The CBP Design System Sketch Libary is a resource to allow consumers of the CBP 
 In order to use this resource there are several prerequisites required before trying to download this file. 
 - You must be working from an Apple Macintosh OS computer. Sketch does not currently support desktop Windows machines. Though Sketch does have a browser-based offering.
 - You must have a license or subscription to use the Sketch Application. [Download Sketch](https://www.sketch.com/)
-- To begin, you must FIRST download and install the required font files to your Font Book application on your mac. Failure to install these fonts correctly before opening the library file will cause all elements that utilize font stylings to break.
+- To begin, you must **FIRST** download and install the required font files to your Font Book application on your mac. Failure to install these fonts correctly before opening the library file will cause all elements that utilize font stylings to break.
   
     - Roboto from Google Fonts. First, you will need to click the "download family" button from this page [Google Fonts](https://fonts.google.com/specimen/Roboto). Then you will need to unzip the folder and drag all of the .ttf files to your Font Book application on your mac into your "All Fonts" folder.
     - Roboto Mono from Google Fonts. First, you will need to click the "download family" button from this page [Google Fonts](https://fonts.google.com/specimen/Roboto+Mono?query=roboto+mono). Then you will need to unzip the folder and drag all of the .ttf files to your Font Book application on your mac into your "All Fonts" folder.
