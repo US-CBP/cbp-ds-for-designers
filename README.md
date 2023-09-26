@@ -22,6 +22,7 @@ In order to use this resource there are several prerequisites required before tr
  
 
 Once you have the font files installed on your system click this link to add the Sketch Library File to your Sketch application: [Add Sketch Library](sketch://add-library?url=https%3A%2F%2Fus-cbp.github.io%2Fcbp-ds-for-designers%2Fsketch.rss)  
+
 Upon clicking this link, you should be directed to your Sketch desktop application to confirm that you want to add this library file. 
 
 
@@ -29,7 +30,7 @@ Upon clicking this link, you should be directed to your Sketch desktop applicati
 ### Keeping the CBP Design System Library File Up-To-Date
 If you followed the installation instructions above correctly, then keeping your local version of the Sketch library should be very simple. Whenever there is an update to the Sketch library file then any file you use that utilizes the CBP DS Sketch library will update upon clicking the notification icon in the top-right corner of your Sketch application and selecting "library Updates Available." This will tell Sketch to update your library file and will show you what has changed between your version and this one. 
 
-DO NOT make changes directly to the CBP DS Sketch library file. If you do, then when you update your version of the library file any of these overrides may be lost. If you need an alternate version of a particular component try clicking on that component and "make it local" so that you detach any changes you are making from an element in the library file.
+**DO NOT** make changes directly to the CBP DS Sketch library file. If you do, then when you update your version of the library file any of these overrides may be lost. If you need an alternate version of a particular component try clicking on that component and "make it local" so that you detach any changes you are making from an element in the library file.
 
 
 
