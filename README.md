@@ -1,5 +1,5 @@
 # CBP Design System - for Designers
-This repository hosts editable, open source US Customs and Border Protection (USCBP) Design System design files for government designers or anyone wishing to make use of the CBPDS components or visual styles.
+This repository hosts editable, open source US Customs and Border Protection (USCBP) Design System design files for government designers or anyone wishing to make use of the CBP DS components or visual styles.
 
 What's included in this respository:
 - Sketch Library 
