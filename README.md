@@ -17,15 +17,13 @@ In order to use this resource there are several prerequisites required before tr
 - You must have a license or subscription to use the Sketch Application. [Download Sketch](https://www.sketch.com/)
 - To begin, you must **FIRST** download and install the required font files to your Font Book application on your mac. Failure to install these fonts correctly before opening the library file will cause all elements that utilize font stylings to break.
 
-    - Roboto from Google Fonts. First, you will need to click the "download family" button from this page [Google Fonts](https://fonts.google.com/specimen/Roboto). Then you will need to unzip the folder and drag all of the .ttf files to your Font Book application on your mac into your "All Fonts" folder.
-    - Roboto Mono from Google Fonts. First, you will need to click the "download family" button from this page [Google Fonts](https://fonts.google.com/specimen/Roboto+Mono?query=roboto+mono). Then you will need to unzip the folder and drag all of the .ttf files to your Font Book application on your mac into your "All Fonts" folder.
-    - Font Awesome 6. The CBP DS uses the **FREE version** of the Font Awesome Icon library. First, visit this page [Font Awesome 6](https://fontawesome.com/download) and click on the download button for the "Free for Desktop" set of icons. Unzip that folder. In that folder you will find another folder labled "otfs". Drag all of those files into the "All Fonts" folder in your Font Book application.
-
+    - `Roboto` from Google Fonts. First, you will need to click the "download family" button from this page [Google Fonts](https://fonts.google.com/specimen/Roboto). Then you will need to unzip the folder and drag all of the .ttf files to your Font Book application on your mac into your "All Fonts" folder.
+    - `Roboto Mono` from Google Fonts. First, you will need to click the "download family" button from this page [Google Fonts](https://fonts.google.com/specimen/Roboto+Mono?query=roboto+mono). Then you will need to unzip the folder and drag all of the .ttf files to your Font Book application on your mac into your "All Fonts" folder.
+    - `Font Awesome 6`. The CBP DS uses the **FREE version** of the Font Awesome Icon library. First, visit this page [Font Awesome 6](https://fontawesome.com/download) and click on the download button for the "Free for Desktop" set of icons. Unzip that folder. In that folder you will find another folder labled "otfs". Drag all of those files into the "All Fonts" folder in your Font Book application.
 
 Once you have the font files installed on your system click this link to add the Sketch Library File to your Sketch application: [Add Sketch Library](sketch://add-library?url=https%3A%2F%2Fus-cbp.github.io%2Fcbp-ds-for-designers%2Fsketch.rss) &middot; [View in Github Pages](https://us-cbp.github.io/cbp-ds-for-designers/)
 
 Upon clicking this link, you should be directed to your Sketch desktop application to confirm that you want to add this library file.
-
 
 ### Keeping the CBP Design System Library File Up-To-Date
 
