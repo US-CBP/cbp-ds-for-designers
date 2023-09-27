@@ -62,14 +62,27 @@ jobs:
         with:
           # jq command with arguments
           cmd: "jq -n --arg name \"CBP DS SKETCH LIBRARY.sketch\" --arg url \"https://github.com/US-CBP/cbp-ds-for-designers/raw/main/CBP%20DS%20SKETCH%20LIBRARY.sketch\" --arg dts \"$(date +%Y%m%d.%H%M%S)\" '{ itemName: $name, versionID: $dts, downloadURL: $url }' > sketch.json"
+
+      - name: Update sketch.rss version
+        uses: Mudlet/xmlstarlet-action@master
+        if: steps.check_file_changed.outputs.sketch_changed == 'True'
+        with:
+          args: ed -L --update '/rss/channel/item/enclosure/@sparkle:version' -v "$(date +%Y%m%d.%H%M%S)" sketch.rss
+
+      - name: Update sketch.rss pubDate
+        uses: Mudlet/xmlstarlet-action@master
+        if: steps.check_file_changed.outputs.sketch_changed == 'True'
+        with:
+          args: ed -L --update '/rss/channel/item/pubDate' -v "$(date)" sketch.rss
+        
       - name: Commit sketch.json
         if: steps.check_file_changed.outputs.sketch_changed == 'True'
         run: |
           git config --global user.name 'GH Action'
           git config --global user.email 'actions@users.noreply.github.com'
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
-          git add sketch.json
-          git commit -m "[skip ci] Update sketch.json (automated)"
+          git add sketch.*
+          git commit -m "[skip ci] Update sketch.(json,rss) timestamps (automated)"
           git push
 
   # Deployment job
