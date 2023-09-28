@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>CBP Sketch Library</title>
+    <description>CBP Sketch Library</description>
+    <item>
+      <title>CBP Sketch Library</title>
+      <pubDate>Tue Sep 26 11:33:58 EDT 2023</pubDate>
+      <enclosure url="https://github.com/US-CBP/cbp-ds-for-designers/raw/main/CBP%20DS%20SKETCH%20LIBRARY.sketch" type="application/octet-stream" sparkle:version="20230926.113358"/>
+    </item>
+  </channel>
+</rss>
